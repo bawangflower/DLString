@@ -15,6 +15,8 @@
 		5B34E89A1D220B4900BF0F84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B34E8981D220B4900BF0F84 /* LaunchScreen.storyboard */; };
 		5B34E8A51D220B4900BF0F84 /* DLStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B34E8A41D220B4900BF0F84 /* DLStringTests.m */; };
 		5B34E8B01D220B4900BF0F84 /* DLStringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B34E8AF1D220B4900BF0F84 /* DLStringUITests.m */; };
+		5B34E8C21D220C0900BF0F84 /* NSAttributedString+DLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B34E8BF1D220C0900BF0F84 /* NSAttributedString+DLCategory.m */; };
+		5B34E8C31D220C0900BF0F84 /* NSString+DLCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B34E8C11D220C0900BF0F84 /* NSString+DLCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		5B34E8AB1D220B4900BF0F84 /* DLStringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DLStringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B34E8AF1D220B4900BF0F84 /* DLStringUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLStringUITests.m; sourceTree = "<group>"; };
 		5B34E8B11D220B4900BF0F84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B34E8BE1D220C0900BF0F84 /* NSAttributedString+DLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DLCategory.h"; sourceTree = "<group>"; };
+		5B34E8BF1D220C0900BF0F84 /* NSAttributedString+DLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DLCategory.m"; sourceTree = "<group>"; };
+		5B34E8C01D220C0900BF0F84 /* NSString+DLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DLCategory.h"; sourceTree = "<group>"; };
+		5B34E8C11D220C0900BF0F84 /* NSString+DLCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DLCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		5B34E8891D220B4900BF0F84 /* DLString */ = {
 			isa = PBXGroup;
 			children = (
+				5B34E8BD1D220C0900BF0F84 /* DLStringSDK */,
 				5B34E88D1D220B4900BF0F84 /* AppDelegate.h */,
 				5B34E88E1D220B4900BF0F84 /* AppDelegate.m */,
 				5B34E8901D220B4900BF0F84 /* ViewController.h */,
@@ -139,6 +146,17 @@
 			);
 			path = DLStringUITests;
 			sourceTree = "<group>";
+		};
+		5B34E8BD1D220C0900BF0F84 /* DLStringSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5B34E8BE1D220C0900BF0F84 /* NSAttributedString+DLCategory.h */,
+				5B34E8BF1D220C0900BF0F84 /* NSAttributedString+DLCategory.m */,
+				5B34E8C01D220C0900BF0F84 /* NSString+DLCategory.h */,
+				5B34E8C11D220C0900BF0F84 /* NSString+DLCategory.m */,
+			);
+			path = DLStringSDK;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -273,6 +291,8 @@
 				5B34E8921D220B4900BF0F84 /* ViewController.m in Sources */,
 				5B34E88F1D220B4900BF0F84 /* AppDelegate.m in Sources */,
 				5B34E88C1D220B4900BF0F84 /* main.m in Sources */,
+				5B34E8C31D220C0900BF0F84 /* NSString+DLCategory.m in Sources */,
+				5B34E8C21D220C0900BF0F84 /* NSAttributedString+DLCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "NSString+DLCategory.h"
+
 @interface ViewController ()
 
 @end
@@ -17,6 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *a = @"134556465325";
+    NSInteger count = [a countOfSubString:@"5"];
+    NSLog(@"%li",(long)count);
+    
 }
 
 - (void)didReceiveMemoryWarning {
